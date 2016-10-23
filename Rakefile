@@ -3,15 +3,15 @@ require 'rake/clean'
 
 
 task :build do
-  sh %q(gem build *.gemspec)
+  sh 'gem build *.gemspec'
 end
 
 task :push => :build do
-  sh %q(gem push *.gem)
+  sh 'gem push *.gem'
 end
 
 task :install => :build do
-  sh %q(gem install *.gem)
+  sh 'gem install *.gem'
 end
 
 task :test => :install do
