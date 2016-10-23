@@ -15,7 +15,7 @@ $ gem install block-is-hash
 
 Code:
 
-```
+```ruby
 require 'block-is-hash'
 
 hash = block_is_hash %i(server) do
@@ -39,7 +39,7 @@ p hash
 
 Output:
 
-```
+```ruby
 {:user=>:www, :http=>{:server=>[{:listen=>80, :server_name=>"foo.com"}, {:listen=>[443, :ssl], :server_name=>"bar.com"}]}}
 ```
 
