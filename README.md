@@ -13,6 +13,8 @@ $ gem install block-is-hash
 
 ## Usage
 
+Code:
+
 ```
 require 'block-is-hash'
 
@@ -33,6 +35,12 @@ hash = block_is_hash %i(server) do
 end
 
 p hash
+```
+
+Output:
+
+```
+{:user=>:www, :http=>{:server=>[{:listen=>80, :server_name=>"foo.com"}, {:listen=>[443, :ssl], :server_name=>"bar.com"}]}}
 ```
 
 For more examples, see [examples](examples) directory.
