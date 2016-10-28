@@ -18,7 +18,7 @@ Code:
 ```ruby
 require 'block-is-hash'
 
-hash = block_is_hash %i(server) do
+hash = block_is_hash %i(server) do # `server` directive can be repeated.
   user :www
 
   http do
